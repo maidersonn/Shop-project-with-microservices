@@ -19,6 +19,8 @@ public class User {
     @NotEmpty
     private String[] roles;
 
+    public User(){}
+
     public User(Long id, String username,  String[] roles) {
         this.id = id;
         this.username = username;
