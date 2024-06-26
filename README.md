@@ -26,8 +26,8 @@ The article-server handle articles. It has:
 + Authorization verification. Check authorization in db. 
 + Authenticated and authorized article CRUD exposed.
 
-<img src="/Users/maiderlandaribar/Downloads/Flowchart.jpg"/>
-![Flow](/Users/maiderlandaribar/Downloads/Flowchart.jpg)
+<img src="./Flowchart.jpg"/>
+
 
 ## Dependencies
 
