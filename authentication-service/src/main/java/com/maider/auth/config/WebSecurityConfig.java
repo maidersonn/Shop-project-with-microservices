@@ -46,7 +46,8 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests((authz) -> authz
                         .requestMatchers(HttpMethod.POST, "/singin").permitAll()
                         .requestMatchers(HttpMethod.POST, "/login").permitAll()
-                        .anyRequest().authenticated()
+                        .requestMatchers(HttpMethod.DELETE, "/**").authenticated()
+                        .anyRequest().anonymous()
                 );
         http.authenticationProvider(authenticationProvider());
         return http.build();
